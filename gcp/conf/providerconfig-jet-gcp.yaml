@@ -1,0 +1,13 @@
+---
+apiVersion: gcp.jet.crossplane.io/v1alpha1
+kind: ProviderConfig
+metadata:
+  name: provider-jet-gcp
+spec:
+  projectID: playground-341511
+  credentials:
+    source: Secret
+    secretRef:
+      name: gcp-sa-creds-playground-341511
+      namespace: crossplane-system
+      key: credentials
