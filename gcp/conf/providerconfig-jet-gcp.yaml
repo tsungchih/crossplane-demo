@@ -3,6 +3,7 @@ apiVersion: gcp.jet.crossplane.io/v1alpha1
 kind: ProviderConfig
 metadata:
   name: provider-jet-gcp
+  namespace: crossplane-system
 spec:
   projectID: playground-341511
   credentials:
