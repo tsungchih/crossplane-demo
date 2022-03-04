@@ -2,6 +2,7 @@ apiVersion: storage.gcp.jet.crossplane.io/v1alpha2
 kind: Bucket
 metadata:
   name: bucket-example
+  namespace: crossplane-system
   annotations:
     crossplane.io/external-name: crossplane-example-bucket-asdfghjkl
     # This annotation is a workaround for the following bug which sets
